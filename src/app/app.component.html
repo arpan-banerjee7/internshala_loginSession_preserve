@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto">
+      <div>
+        <button class="btn btn-success" (click)="getDetails()">
+          Get Details
+        </button>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="msg" *ngIf="hasMessage">
+      <h3>{{ dataAfterLogIn }}</h3>
+    </div>
+  </div>
+</div>
